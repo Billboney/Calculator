@@ -4,29 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="js.js" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="js.js" defer></script>
 </head>
 <body>
+<div>
     <!--display-->
-    <div class="display"></div>
+    <div class="tinyDisplay">0</div>
+    <div class="display">
+        
+        0
+    </div>
     <!-- 0-9 numbers-->
-    <button onclick="press(1)" class="squareButtons one"> </button>
-    <button onclick="press(2)" class="squareButtons two"> </button>
-    <button onclick="press(3)" class="squareButtons three"> </button>
-    <button onclick="press(4)" class="squareButtons four"> </button>
-    <button onclick="press(5)" class="squareButtons five"> </button>
-    <button onclick="press(6)" class="squareButtons six"> </button>
-    <button onclick="press(7)" class="squareButtons seven"> </button>
-    <button onclick="press(8)" class="squareButtons eight"> </button>
-    <button onclick="press(9)" class="squareButtons nine"> </button>
-    <button onclick="press(0)" class="squareButtons zero"> </button>
+<div class="calculatorFrame">
+    <div class="buttonLayout">
+        <button onclick="press(1)" class="squareButtons one">1</button>
+        <button onclick="press(2)" class="squareButtons two">2</button>
+        <button onclick="press(3)" class="squareButtons three">3</button>
+        <button onclick="press(4)" class="squareButtons four">4</button>
+        <button onclick="press(5)" class="squareButtons five">5</button>
+        <button onclick="press(6)" class="squareButtons six">6</button>
+        <button onclick="press(7)" class="squareButtons seven">7</button>
+        <button onclick="press(8)" class="squareButtons eight">8</button>
+        <button onclick="press(9)" class="squareButtons nine">9</button>
+        <button onclick="press(0)" class="squareButtons zero">0</button>
+        <button onclick="press('.')" class="squareButtons dot">.</button>
+    
+    </div>
+    <div class="symbolLayout">
+    <button onclick="powerButton()" class="squareButtons2 onOff">on/off</button>
     <!-- . -->
+    <button onclick="ce()" class="squareButtons2 ce">Ce</button>
     <!-- ce -->
+    <button onclick="symbol('+', Value, storedArray, storedSym), calculate(displayText)" class="squareButtons2 add">+</button>
     <!-- + -->
+    <button onclick="symbol('-', Value, storedArray, storedSym)" class="squareButtons2 minus">-</button>
     <!-- - -->
+    <button onclick="symbol('*')" class="squareButtons2 times">x</button>
     <!-- x -->
+    <button onclick="symbol('/')" class="squareButtons2 divide">/</button>
     <!-- / -->
+    <button onclick="calculate(displayText)" class="squareButtons2 equals">=</button>
     <!-- = -->
+    
+    </div>
+</div>
     <!-- of/on-->
+</div>
 </body>
 </html>
